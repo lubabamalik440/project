@@ -1,11 +1,26 @@
-import CssStyle from "./Hero.module.css"
-console.log(CssStyle);
-
-const Hero=() => {
+const Hero = () => {
    return (
-    <h1 className={CssStyle.Hero}>
-   this is hero section
-    </h1>
-   );
-}
-export default Hero;
+     <section className="bg-gray-600 text-white h-screen flex items-center justify-center">
+       <div className="text-center   px-4 font-serif ">
+         <h1 className="text-4xl md:text-6xl font-bold mb-4 ">
+           WELCOME TO MY WEB-SITE 
+       </h1>
+       
+         <p className="text-lg md:text-xl mb-6">
+this is an example of a hero section built with next.js and tailwind.css
+         </p>
+         <a
+         href="#"
+         className=" bg-slate-200 text-black py-3 px-6 rounded-full hover:bg-slate-900 transition
+         duration-300">
+         Get Started
+         </a>
+       </div>
+     </section>
+ );
+
+   
+ }
+ 
+ export default Hero; 
+   

@@ -1,10 +1,9 @@
-import CssStyle from "./Header.module.css"
-console.log(CssStyle);
+
 
 import Link from "next/link";
 const Header = () =>{
     return(
-    <div className={CssStyle.Header}>
+    <div >
         <ul>
 <li>
     <Link href="/home"> home </Link>

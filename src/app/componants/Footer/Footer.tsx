@@ -1,11 +1,20 @@
-import CssStyle from "./Footer.module.css"
-console.log(CssStyle);
+import Link from "next/link"  
+ 
+ const Footer= () => {
+    return ( 
+    <footer className="bg-slate-300 text-white  py-6">
+<div className="container mx-auto text-center">
+  <p className="mb-2">
+2024 LubabaMalik. All right reserved.</p>
+<p className="mb-4">contact:info@LubabaMalik.com</p>
+<div className="flex justify-center space-x-4">
+<Link href="/" className=" text-slate-400 hover:text-white font-serif font-bold">facebook</Link>
+<Link href="/" className=" text-slate-400 hover:text-white font-serif font-bold">twitter</Link>
+<Link href="/" className=" text-slate-400 hover:text-white font-serif font-bold">linkedin</Link>
 
-const Footer=() => {
-   return (
-    <h1 className={CssStyle.Footer}>
-   this is footer
-    </h1>
+</div>
+</div>
+  </footer>
    );
-}
-export default Footer;
+  }
+ export default Footer;  
